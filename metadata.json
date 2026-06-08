@@ -1,0 +1,5 @@
+{
+  "name": "CUT AND FUN Barber",
+  "description": "Professional Barbershop website , FAQ, reviews, photos, and a powered booking chatbot.",
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
