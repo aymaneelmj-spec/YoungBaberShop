@@ -191,7 +191,7 @@ function HeroSection({ isRTL, onChatOpen }: { isRTL: boolean; onChatOpen: () => 
 
         {/* The actual shop photo (/gallery/25.jpg as uploaded) */}
         <img
-          src="/gallery/25.jpg"
+          src="/gallery/25.jpg" 
           alt="CUT AND FUN Kids Barber Shop - Sahara Mall Riyadh"
           className="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000"
           style={{
@@ -207,7 +207,7 @@ function HeroSection({ isRTL, onChatOpen }: { isRTL: boolean; onChatOpen: () => 
             if (img.src.includes('25.jpg')) {
               img.src = '/gallery/6.jpg';
             } else if (img.src.includes('6.jpg')) {
-              img.src = '/gallery/25.jpg';
+              img.src = '/gallery/25.png';
               setImgLoaded(true);
             }
           }}
@@ -335,14 +335,23 @@ function HeroSection({ isRTL, onChatOpen }: { isRTL: boolean; onChatOpen: () => 
         </motion.div>
 
         {/* Tagline */}
-        <motion.p
-          initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.45, duration: 0.7 }}
-          className="text-base md:text-xl text-zinc-200 font-light mb-12 max-w-xl mx-auto leading-relaxed"
-          style={{ textShadow: '0 2px 20px rgba(0,0,0,0.8)' }}>
-          {isRTL
-            ? 'حلاقة آمنة وممتعة واحترافية للأطفال في قلب الرياض'
-            : 'Safe, Fun & Professional Kids Haircuts — Sahara Mall, Riyadh'}
-        </motion.p>
+       <motion.p
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.45, duration: 0.7 }}
+  className="text-base md:text-xl text-white font-medium mb-12 max-w-xl mx-auto leading-relaxed tracking-wide"
+  style={{
+    textShadow: `
+      0 0 10px rgba(255,255,255,0.35),
+      0 0 20px rgba(255,255,255,0.2),
+      0 2px 12px rgba(0,0,0,0.6)
+    `
+  }}
+>
+  {isRTL
+    ? 'حلاقة آمنة وممتعة واحترافية للأطفال في قلب الرياض'
+    : 'Safe, Fun & Professional Kids Haircuts — Sahara Mall, Riyadh'}
+</motion.p>
 
         {/* CTA buttons */}
         <motion.div
@@ -367,7 +376,7 @@ function HeroSection({ isRTL, onChatOpen }: { isRTL: boolean; onChatOpen: () => 
 
           {/* WhatsApp */}
           <a
-            href={`https://wa.me/966509860820?text=${encodeURIComponent(isRTL ? 'السلام عليكم، أريد الحجز' : 'Hello, I would like to book an appointment')}`}
+            href={`https://wa.me/966557175550?text=${encodeURIComponent(isRTL ? 'السلام عليكم، أريد الحجز' : 'Hello, I would like to book an appointment')}`}
             target="_blank" rel="noopener noreferrer"
             className="group relative font-bold py-4 px-9 rounded-full flex items-center justify-center gap-3 w-full sm:w-auto text-sm md:text-base overflow-hidden transition-all duration-300 hover:scale-105"
             style={{
@@ -386,7 +395,7 @@ function HeroSection({ isRTL, onChatOpen }: { isRTL: boolean; onChatOpen: () => 
 
           {/* Directions */}
           <a
-            href="https://www.google.com/maps/place/%D8%A7%D8%AD%D8%AA%D8%B1%D8%A7%D9%81+%D8%B4%D9%81%D8%B1%D8%A9+%D9%84%D9%84%D8%AD%D9%84%D8%A7%D9%82%D8%A9+%D8%A7%D9%84%D8%B1%D8%AC%D8%A7%D9%84%D9%8A%D9%87%E2%80%AD/@24.7558793,46.6976635,15z"
+            href="https://www.google.com/maps/place/%D8%AD%D9%84%D9%91%D9%8E%D8%A7%D9%82+%D8%A3%D8%B7%D9%81%D8%A7%D9%84+%D9%83%D8%A7%D8%AA+%D8%A2%D9%86%D8%AF+%D9%81%D9%86+cut+and+fun+%D8%B5%D8%AD%D8%A7%D8%B1%D9%89+%D9%85%D9%88%D9%84%E2%80%AD/@24.7406158,46.6825485,15z/data=!4m11!1m3!2m2!1sbarbershops+near+Saudi+Arabia!6e1!3m6!1s0x3e2f105e08ef1d29:0xa3ddbfdbc38a5754!8m2!3d24.7404354!4d46.6821078!15sCh1iYXJiZXJzaG9wcyBuZWFyIFNhdWRpIEFyYWJpYVofIh1iYXJiZXJzaG9wcyBuZWFyIHNhdWRpIGFyYWJpYZIBC2JhcmJlcl9zaG9wmgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVVJTTW1SbVgwRlJFQUXgAQD6AQUIxAQQKA!16s%2Fg%2F11f79bp19_?entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D"
             target="_blank" rel="noopener noreferrer"
             className="group relative font-bold py-4 px-9 rounded-full flex items-center justify-center gap-3 w-full sm:w-auto text-sm md:text-base overflow-hidden transition-all duration-300 hover:scale-105"
             style={{
