@@ -207,7 +207,7 @@ function HeroSection({ isRTL, onChatOpen }: { isRTL: boolean; onChatOpen: () => 
             if (img.src.includes('25.jpg')) {
               img.src = '/gallery/6.jpg';
             } else if (img.src.includes('6.jpg')) {
-              img.src = 'https://images.unsplash.com/photo-1584184924103-e310d9dc82fc?q=80&w=2070&auto=format&fit=crop';
+              img.src = '/gallery/25.jpg';
               setImgLoaded(true);
             }
           }}
