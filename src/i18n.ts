@@ -32,7 +32,8 @@ const resources = {
       "FaqA2": "We are open daily from 11:00 AM.",
       "FaqQ3": "Do you offer facial treatments?",
       "FaqA3": "Yes, we offer a range of facial and grooming packages for men.",
-      "ChatWelcome": "Hello! Welcome to CUT AND FUN Kids Barber. How can I help you book an appointment for your child today?"
+      "ChatWelcome": "Hello! Welcome to CUT AND FUN Kids Barber. 
+How can I help you book an appointment for your child today?"
     }
   },
   ar: {
@@ -65,7 +66,7 @@ const resources = {
       "FaqA2": "نحن مفتوحون يومياً ابتداءً من الساعة 11 صباحاً.",
       "FaqQ3": "هل تقدمون خدمات العناية بالبشرة؟",
       "FaqA3": "نعم، نقدم مجموعة متنوعة من باقات العناية بالبشرة للرجال.",
-      "ChatWelcome": "مرحباً بك! أنا المساعد الذكي لحلاق فور يو (توب ليفل). كيف يمكنني مساعدتك في حجز موعدك اليوم؟"
+      "ChatWelcome": "مرحباً بك! أنا المساعد الذكي لحلاق فور يو (CUT AND FUN). كيف يمكنني مساعدتك في حجز موعدك اليوم؟"
     }
   }
 };

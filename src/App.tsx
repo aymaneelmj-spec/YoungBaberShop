@@ -1069,7 +1069,7 @@ export default function App() {
                     </p>
                     <p className="flex items-center gap-3">
                       <Phone className="w-4 h-4 flex-shrink-0" style={{ color: BRAND.green }} />
-                      <span dir="ltr" className="font-bold text-white tracking-wide">+966 54 442 0003</span>
+                      <span dir="ltr" className="font-bold text-white tracking-wide">+966 55 717 5550</span>
                     </p>
                   </div>
                 </div>
@@ -1081,13 +1081,13 @@ export default function App() {
                   </div>
                   <div className={`grid grid-cols-[max-content_1fr] gap-x-6 gap-y-2 text-sm ${isRTL ? 'pr-2' : 'pl-2'}`}>
                     {[
-                      { day: 'Thursday',  hours: '9 AM – 12 AM' },
-                      { day: 'Friday',    hours: '12 PM – 12 AM' },
-                      { day: 'Saturday',  hours: '9 AM – 12 AM' },
-                      { day: 'Sunday',    hours: '9 AM – 12 AM' },
-                      { day: 'Monday',    hours: '9 AM – 12 AM' },
-                      { day: 'Tuesday',   hours: '9 AM – 12 AM' },
-                      { day: 'Wednesday', hours: '9 AM – 12 AM' },
+                      { day: 'Monday',    hours: '11 AM – 11 PM' },
+{ day: 'Tuesday',   hours: '11 AM – 11 PM' },
+{ day: 'Wednesday', hours: '11 AM – 11 PM' },
+{ day: 'Thursday',  hours: '11 AM – 11 PM' },
+{ day: 'Friday',    hours: '1:30 PM – 11 PM' },
+{ day: 'Saturday',  hours: '11 AM – 11 PM' },
+{ day: 'Sunday',    hours: '11 AM – 11 PM' },
                     ].map(({ day, hours }) => (
                       <>
                         <span key={day+'a'} className="text-zinc-500">{t(day)}</span>

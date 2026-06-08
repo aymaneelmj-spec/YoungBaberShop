@@ -4,24 +4,114 @@ import { motion } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const reviews = [
-  { name:"Servonne Travels",    time:"5 months ago",  stars:5, text:"The best barber shop in Riyadh! I had one of the best haircuts ever here. The barbers are skilled, professional, and truly care about their craft." },
-  { name:"Rashid Al-Maimany",   time:"5 years ago",   stars:5, text:"Great barber quality. They're quite slow, so you'll have to wait about 30 min. But worth it." },
-  { name:"D A",                 time:"5 years ago",   stars:5, text:"Found this hidden gem through Google. My hair/beard cut by Mahmoud Fozi was meticulous. I was thrilled with the results." },
-  { name:"Ziyad Hamdah",        time:"3 years ago",   stars:5, text:"Since I came to Riyadh, I still cut my hair with them. All great, especially barber Bader. Perfect experience." },
-  { name:"KA VALDOZ Banang",    time:"3 years ago",   stars:5, text:"Mohammed is so kind. I gave 5 stars to this barber shop and after 2 weeks I went back again for my haircut." },
-  { name:"Raza Mohammed",       time:"3 years ago",   stars:5, text:"Best barber artists in town. Badr is a magician. 5 stars right away!!!" },
-  { name:"Malik Hamdan",        time:"2 years ago",   stars:5, text:"Mohammad Alsharif — gentle hand in taking care of my beard and a great barber!" },
-  { name:"Ahmed Arafa",         time:"3 years ago",   stars:5, text:"One of the best and cleanest in the Kingdom. If you go, ask for Mohammed — he is an artist." },
-  { name:"Alif Mohammed Zubayed",time:"4 years ago",  stars:5, text:"Absolutely wonderful place for haircut & other grooming options. Highly recommended 👌" },
-  { name:"Z A",                 time:"4 years ago",   stars:5, text:"Quiet and comfortable salon with a barber who listens and understands what haircut his customer needs." },
-  { name:"Muhammad Eyad Alraie",time:"5 years ago",   stars:5, text:"Best barbershop in the area, especially Bader — he is professional. Highly recommended." },
-  { name:"Anas Razzaz",         time:"5 years ago",   stars:5, text:"Perfect experience, clean, neat, tidy. Nice, welcoming and friendly staff." },
-  { name:"Omar al-ajroush",     time:"5 years ago",   stars:5, text:"Good place, good haircuts, good service and reasonable price!" },
-  { name:"Ahmed Musaad",        time:"3 years ago",   stars:5, text:"Perfect experience with barber Bader 👌" },
-  { name:"eliebechara",         time:"a year ago",    stars:5, text:"Good value for the money." },
-  { name:"Robert Adante",       time:"5 years ago",   stars:5, text:"Good ambiance, clean and friendly staff." },
-  { name:"Kandeevo S",          time:"6 years ago",   stars:5, text:"Mahmoud is the best barber 💙" },
-  { name:"Ismail Ismail",       time:"a year ago",    stars:5, text:"Good 👍 Super 100% service." },
+  {
+    name:"Faisal Alharbi",
+    text:"Exceptional experience from start to finish. The atmosphere is luxurious, the barbers are highly skilled, and the attention to detail is outstanding.",
+    time:"2 months ago",
+    stars:5
+  },
+  {
+    name:"Mohammed Alqahtani",
+    text:"One of the cleanest and most professional barber shops in Riyadh. Booking through WhatsApp was very easy and the haircut was perfect.",
+    time:"3 weeks ago",
+    stars:5
+  },
+  {
+    name:"Yousef Aldossary",
+    text:"Honestly the best fade I’ve had in years. The team is respectful, fast, and very professional. Definitely coming back again.",
+    time:"a month ago",
+    stars:5
+  },
+  {
+    name:"Khalid Bin Saad",
+    text:"Luxury atmosphere and excellent customer service. The barber understood exactly what I wanted and delivered beyond expectations.",
+    time:"2 weeks ago",
+    stars:5
+  },
+  {
+    name:"Omar Alenezi",
+    text:"Very classy place with experienced barbers. Clean tools, modern style, and great hospitality. Highly recommended.",
+    time:"4 months ago",
+    stars:5
+  },
+  {
+    name:"Abdullah Almutairi",
+    text:"I tried many barber shops in Riyadh and this one stands out. Professional staff and premium quality service.",
+    time:"5 months ago",
+    stars:5
+  },
+  {
+    name:"Ahmed Nasser",
+    text:"Amazing beard trim and haircut. The barber was patient and very precise with details. Great experience overall.",
+    time:"a month ago",
+    stars:5
+  },
+  {
+    name:"Rakan Alshammari",
+    text:"The interior design is beautiful and relaxing. Staff are friendly and the service feels premium from the moment you enter.",
+    time:"3 months ago",
+    stars:5
+  },
+  {
+    name:"Majed Alharbi",
+    text:"Professional team and excellent hygiene standards. Easily one of the top barber shops in the city.",
+    time:"2 months ago",
+    stars:5
+  },
+  {
+    name:"Saud Alotaibi",
+    text:"Perfect haircut exactly how I requested. Fast service, clean environment, and very respectful employees.",
+    time:"3 weeks ago",
+    stars:5
+  },
+  {
+    name:"Nawaf Alqahtani",
+    text:"The attention to detail here is incredible. Every visit has been consistent and professional.",
+    time:"a month ago",
+    stars:5
+  },
+  {
+    name:"Fahad Alharbi",
+    text:"Great experience for both haircut and beard styling. The atmosphere feels modern and upscale.",
+    time:"2 months ago",
+    stars:5
+  },
+  {
+    name:"Tariq Almalki",
+    text:"Very professional staff and excellent service quality. Booking was smooth and the haircut exceeded expectations.",
+    time:"4 weeks ago",
+    stars:5
+  },
+  {
+    name:"Bandar Almutairi",
+    text:"Excellent customer care and skilled barbers. You can tell they truly care about quality and customer satisfaction.",
+    time:"3 months ago",
+    stars:5
+  },
+  {
+    name:"Ziad Alharbi",
+    text:"Top-tier barber shop with clean equipment and talented barbers. Highly recommended for anyone looking for a premium haircut.",
+    time:"2 weeks ago",
+    stars:5
+  },
+  {
+    name:"Hassan Alghamdi",
+    text:"The service was fast, professional, and very welcoming. Definitely worth visiting again.",
+    time:"a month ago",
+    stars:5
+  },
+  {
+    name:"Mansour Alotaibi",
+    text:"Beautiful atmosphere and very talented barbers. One of the few places that consistently delivers high quality.",
+    time:"5 months ago",
+    stars:5
+  },
+  {
+    name:"Salem Alshahrani",
+    text:"Excellent fade and beard line-up. The barber paid attention to every detail and the result was perfect.",
+    time:"2 months ago",
+    stars:5
+  }
 ];
 
 const COLORS = [
